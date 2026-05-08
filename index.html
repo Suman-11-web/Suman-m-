@@ -2,74 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting to SumanOS...</title>
 
-    <meta name="google-site-verification" content="mZEgpTqfMntZi5yKJyxq39ymsYNqAh-oyInPAz8a77A" />
+    <meta http-equiv="refresh" content="0; url=https://suman0405.pythonanywhere.com/">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     
-    <title>Suman M | Python Developer Mysore</title>
-    <meta name="description" content="Official portfolio of Suman M Hadinaru, a Python developer based in Mysore. Creator of Novasocial and specialist in Flask web development.">
-    <link rel="canonical" href="https://thesuman.in/">
-    
-    <meta name="keywords" content="Suman m hadinaru, Suman m python devloper, Suman m, Suman m Mysore, Novasocial, Python Developer Mysore, Suman M Portfolio">
-    <meta name="author" content="Suman M Hadinaru">
-
-    <meta property="og:title" content="Suman M | Python Developer & Novasocial">
-    <meta property="og:description" content="Suman M Hadinaru - Python Developer from Mysore. View my work and projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thesuman.in/">
-</head>
-
     <style>
-        html, body {
+        /* Sleek SumanOS Dark Theme for the split-second it is visible */
+        body {
             margin: 0;
             padding: 0;
-            width: 1024px;
-            height: 100%;
-            overflow: hidden; 
-            background-color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f172a; 
+            color: #f8fafc;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
         }
-        .full-screen-frame {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 1024px;
-            height: 100%;
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.05);
+            border-top: 4px solid #2563eb;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
-        /* Hidden from users, visible to Google Bots */
-        .seo-hidden-text {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
+        
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 0 10px 0;
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        p {
+            color: #64748b;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .fallback {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #475569;
+        }
+        
+        .fallback a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .fallback a:hover {
+            text-decoration: underline;
         }
     </style>
+
+    <script>
+        // .replace() means they can't click the "Back" button to get stuck in a redirect loop
+        window.location.replace("https://suman0405.pythonanywhere.com/");
+    </script>
 </head>
 <body>
-
-    <div class="seo-hidden-text">
-        <h1>Suman M Hadinaru</h1>
-        <h2>Suman M Python Developer Mysore</h2>
-        <p>Welcome to the official site of Suman M Hadinaru. I am a Python developer from Mysore specializing in full-stack web applications and the Novasocial platform.</p>
-    </div>
-
-    <div class="full-screen-frame">
-        <iframe 
-            src="https://suman0405.pythonanywhere.com" 
-            title="Suman M Hadinaru Portfolio">
-            <p>Your browser does not support iframes. Please visit <a href="https://suman0405.pythonanywhere.com">Suman M Hadinaru</a> directly.</p>
-        </iframe>
+    
+    <div class="loader"></div>
+    <h1>Initializing SumanOS...</h1>
+    <p>Rerouting to secure server</p>
+    
+    <div class="fallback">
+        Not redirecting automatically? <a href="https://suman0405.pythonanywhere.com/">Click here</a>.
     </div>
 
 </body>
